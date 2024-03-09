@@ -1,0 +1,111 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0.2) 100%), url('../src/assets/images/main.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    min-width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.862);
+    padding: 10px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logoImg{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logoInfo {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.logoTitle {
+    color: rgb(0, 0, 0);
+    text-shadow:  5px 5px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Asket Extended", Arial, sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight:1000;
+    margin: 0;
+}
+
+.logoTitleText {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.button {
+    display: flex;
+    padding: 0.6rem 1.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.burger {
+    display: none;
+}
+
+.title {
+    margin-top: 20%;
+    opacity: 0.9;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.748);
+    font-size: 2.5em;
+    line-height: 120%;
+    transition: all 0.5s ease; 
+    padding: 10px;
+    color: black;
+}
+
+.burgerMenuItem {
+    color: rgb(0, 0, 0);
+}
+
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.748);
+    font-size: 24px;
+    line-height: 120%;
+    transition: all 0.5s ease; 
+    padding: 10px;
+    margin-top: 5%;
+}
+
+span {
+    text-transform:none;
+    text-shadow: none;
+    padding: 0;
+
+}

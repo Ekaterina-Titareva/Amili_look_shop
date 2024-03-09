@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color:rgba(0, 0, 0, 0.66);
+}
+.navItem {
+    color: rgba(0, 0, 0, 0.834);
+}
+
+.navItem:hover{
+    color: rgb(255 71 200 / 66%);
+}
+
+.navItems{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    min-width: 510px;
+    list-style: none;
+}

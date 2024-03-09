@@ -1,13 +1,59 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './app.scss'
+import Footer from './Components/Footer/Footer'
+import Header from './Components/Header/Header'
+import About from './Components/About/About'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+<Header className="wrapper" />
+
+< About />
+
+	<section id="goods" className="container">
+		<h2 className="goods__title">наши товары</h2>
+		<article className="goods__items">
+
+		</article>
+	</section>
+	<section id="instagram" className="container">
+
+	</section>
+
+<Footer />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
