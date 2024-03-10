@@ -5,6 +5,12 @@ import './app.scss'
 import Footer from './Components/Footer/Footer'
 import Header from './Components/Header/Header'
 import About from './Components/About/About'
+import {clothes} from './assets/data/data.js'
+import {categories} from './assets/data/data.js'
+
+
+console.log(clothes)
+console.log(categories)
 
 function App() {
   const [count, setCount] = useState(0)
