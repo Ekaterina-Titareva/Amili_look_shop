@@ -1,4 +1,5 @@
 import styles from './about.module.scss'
+import aboutImg from '../../assets/images/about.jpg'
 
 function About() {
 
@@ -6,7 +7,7 @@ function About() {
         <section id="about" className={styles.container}>
         <h2 className={styles.title}>о нас</h2>
         <div className={styles.media}>
-            <img className={styles.image} src="./assets/images/about.jpeg" alt="Гульназ" />
+            <img className={styles.image} src={aboutImg} alt="Гульназ" />
             <div>
                 <p className={styles.text}>Гатауллина Гульназ - основательница магазина одежды Amili look shop.</p>
             </div>

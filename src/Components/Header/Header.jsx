@@ -12,7 +12,7 @@ function Header() {
 		</h1>
 		<div className={styles.container}>
 			<div className={styles.header}>
-				<a className={styles.logo} href="#home">
+				<a className={styles.logo} href="/">
 						<img src={logoImg} alt="logo" className={styles.logoImg} />
                         <div className={styles.logoInfo}>
                             <p className={styles.logoTitle}>Amili look shop</p>
