@@ -1,4 +1,4 @@
-import logoImg from '../../assets/icons/flower.svg'
+import logoImg from '../../assets/icons/logo_footer.jpg'
 import styles from '../Footer/footer.module.scss'
 
 function Footer() {
@@ -10,7 +10,9 @@ function Footer() {
         </div>
         <div className={styles.info}>
         <ul className={styles.contacts}>
-            <li className={styles.instagram}><a target="_blank">instagram</a>
+            <li className={styles.instagram}><a target="_blank">instagram*</a>
+            </li>
+            <li > * запрещен в РФ 
             </li>
             <li className={styles.telegram}><a href="https://t.me/amili_lookshop" target="_blank">telegram</a></li>
             <li className={styles.whatsapp}><a href="https://wa.me/+79510686916" target="_blank">whatsapp</a></li>

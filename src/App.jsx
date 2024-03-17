@@ -1,36 +1,23 @@
-// import { useState } from 'react'
 import './app.scss'
+import Header from './Components/Header/Header.jsx'
+import About from './Components/About/About.jsx'
+import Catalog from './Components/Catalog/Catalog.jsx'
+import Reviews from './Components/Reviews/Reviews.jsx';
 import Footer from './Components/Footer/Footer'
-import Header from './Components/Header/Header'
-import About from './Components/About/About'
-import {clothes} from './assets/data/data.js'
-import {categories} from './assets/data/data.js'
-
-
-console.log(clothes)
-console.log(categories)
 
 function App() {
 
-  return (
-    <>
-<Header className="wrapper" />
-
-< About />
-
-	<section id="goods" className="container">
-		<h2 className="goods__title">Наши товары</h2>
-		<article className="goods__items">
-
-		</article>
-	</section>
-	<section id="instagram" className="container">
-
-	</section>
-
-<Footer />
-    </>
-  )
+	return (
+	<>
+		< Header />
+		<main className='wrapper'>
+			< About />
+			< Catalog />
+			< Reviews />
+		</main>
+		< Footer />
+	</>
+	)
 }
 
 export default App
