@@ -18,9 +18,9 @@ function About() {
                 <p className={styles.text}>Присоединяйтесь к нам в этом невероятном путешествии, поскольку мы продолжаем расти и развиваться. Изучите нашу коллекцию, откройте для себя свой стиль и позвольте Amili_lookshop стать частью вашей истории. Давайте вместе развивать красоту в каждой женщине и делать их мир немного счастливее.</p>
             </div>
         </div>
-        <video className={styles.video} controls preload="auto">
+        {/* <video className={styles.video} controls preload="auto">
                 <source src="./assets/video/video.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         </section>
     );
 }
