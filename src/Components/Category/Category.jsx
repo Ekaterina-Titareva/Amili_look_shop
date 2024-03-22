@@ -19,8 +19,10 @@ const handleMouseOut = (e) => {
                 src={image1} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
                 alt={name}
                 />
-                <p>{name}</p>
-            </div>
+                </div>
+                <div className={styles.nameWrapper}>
+                    <p className={styles.name}>{name}</p>
+                </div>
         </div>
             </>
         )
