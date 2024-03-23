@@ -1,6 +1,6 @@
 import './app.scss'
 import Header from './Components/Header/Header.jsx'
-import About from './Components/About/About.jsx'
+// import About from './Components/About/About.jsx'
 import Catalog from './Components/Catalog/Catalog.jsx'
 import Reviews from './Components/Reviews/Reviews.jsx';
 import Footer from './Components/Footer/Footer'
@@ -11,7 +11,7 @@ function App() {
 	<>
 		< Header />
 		<main className='wrapper'>
-			< About />
+			{/* < About /> */}
 			< Catalog />
 			< Reviews />
 		</main>

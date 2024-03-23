@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Category from '../Category/Category.jsx';
-import ItemOfGoods from '../ItemOfGoods/ItemOfGoods.jsx';
+import Categories from '../Categories/Categories.jsx';
+import ItemsOfCategory from '../ItemsOfCategory/ItemsOfCategory.jsx';
 import styles from '../Catalog/catalog.module.scss'
 import {categories} from '../../assets/data/data.js'
 import {goods} from '../../assets/data/data.js'
@@ -20,6 +20,11 @@ function Catalog() {
 		clickedCategory = filteredItems;
 		console.log(clickedCategory);
 	}
+	const [selectedImage, setSelectedImage] = useState(null);
+
+	const handleImageClick = (image) => {
+	setSelectedImage(image);
+	}
 
 	return (
     <section id="goods" className={styles.container}>
@@ -30,8 +35,9 @@ function Catalog() {
 				{
 					clickedCategory?.length &&
 						clickedCategory.map((item) => ( 
-							<ItemOfGoods
+							<ItemsOfCategory
 							key={item.id}
+							id={item.id}
 							category={item.category}
 							name={item.name}
 							image1={item.image1}
@@ -42,6 +48,8 @@ function Catalog() {
 							size={item.size}
 							price={item.price}
 							material={item.material}
+							selectedImage={selectedImage}
+							handleImageClick={handleImageClick}
 							/>
 					))
 				}
@@ -51,7 +59,7 @@ function Catalog() {
 				{
 				categories?.length &&
 					categories.map((category) => ( 
-						< Category
+						< Categories
 							key={category.id}
 							id={category.id} 
 							name={category.name}

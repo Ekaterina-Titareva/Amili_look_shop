@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Menu from '../Menu/Menu.jsx'
-import logoImg from '../../assets/icons/flower.svg'
+import Logo from '../Logo/Logo.jsx'
 import styles from '../Header/header.module.scss'
 import "./burger.scss"
+
 
 function Header() {
 	const [menuActive, setMenuActive] = useState(false)
@@ -33,13 +34,7 @@ function Header() {
 		</h1>
 		<div className={styles.container}>
 			<div className={styles.header}>
-				<a className={styles.logo} href="/">
-						<img src={logoImg} alt="logo" className={styles.logoImg} />
-                        <div className={styles.logoInfo}>
-                            <p className={styles.logoTitle}>Amili look shop</p>
-                            <p className={styles.logoTitleText}>одежда для женщин</p>
-                        </div>
-				</a>
+				<Logo/>
 			</div>
 		</div>
 	</header>
