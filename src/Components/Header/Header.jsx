@@ -8,15 +8,15 @@ import "./burger.scss"
 function Header() {
 	const [menuActive, setMenuActive] = useState(false)
 	const items = [
-		{id: "home_link", value: "Главная", href: "/home"},
+		{id: "home_link", value: "Главная", href: "/"},
 		{id: "about_link", value: "О нас", href: "/about"},
 		{id: "goods_link", value: "Наши товары", href: "/goods"},
 		{id: "info_link", value: "Информация", href: "/info"},
-		{id: "private_link", value: "Политика конфиденциальности", href: "/private"},
+		{id: "private_link", value: "Политика конфиденциальности", href: "/privacyPolicy"},
 		{id: "contacts_link", value: "Контакты", href: "/contacts"},
 	]
     return (
-    <header className={styles.wrapper} id="home">
+    <header className={styles.wrapper}>
 		<div className="burger">
 			<nav>
 				<div className="button" onClick={() => setMenuActive(!menuActive)}>

@@ -76,7 +76,7 @@ export const goods = [
     },
     {
         id: "6",
-        category: "Комлекты",
+        category: "Комплекты",
         name: "Юбка миди + топ",
         description: "Комплект из летящей, полупрозрачной вискозы. Натуральный плотностью, юбка на подкладке. Ткань струится в движении, мягко подчеркивая силуэт, а нежный цветочный принт и V-образный вырез усиливают ощущение хрупкости — вне времени и вне возраста. Два варианта на выбор. Ярусная юбка в длине миди + блуза с рукавами фонарик или ярусная юбка в длине миди + топ спущенным плечом.",
         image1: "../src/assets/images/clothes/id6I1.jpg",
@@ -380,7 +380,7 @@ export const goods = [
         image3: "../src/assets/images/clothes/id26I3.jpg",
         color: "Коричневый",
         size: "260*240*100 мм",
-        price: "2200 руб.",
+        price: "2200",
         material: "Ручная работа"
     },
     {
@@ -393,7 +393,7 @@ export const goods = [
         image3: "../src/assets/images/clothes/id27I3.jpg",
         color: "Коричневый",
         size: "260*240*100 мм",
-        price: "1800 руб.",
+        price: "1800",
         material: "Ручная работа",
     },
     {
@@ -447,63 +447,54 @@ export const categories = [
         id: "1",
         name: "Платья",
         image1: "../src/assets/images/categories/id1I1.jpg",
-        image2: "../src/assets/images/categories/id1I2.jpg",
-        image3: "../src/assets/images/categories/id1I3.jpg",
+        image2: "../src/assets/images/categories/id1I2.jpg"
     },
     {
         id: "2",
         name: "Кардиганы",
         image1: "../src/assets/images/categories/id2I1.jpg",
-        image2: "../src/assets/images/categories/id2I2.jpg",
-        image3: "../src/assets/images/categories/id2I3.jpg",
+        image2: "../src/assets/images/categories/id2I2.jpg"
     },
     {
         id: "3",
         name: "Комплекты",
         image1: "../src/assets/images/categories/id3I1.jpg",
-        image2: "../src/assets/images/categories/id3I2.jpg",
-        image3: "../src/assets/images/categories/id3I3.jpg",
+        image2: "../src/assets/images/categories/id3I2.jpg"
     },
     {
         id: "4",
         name: "Рубашки",
         image1: "../src/assets/images/categories/id4I1.jpg",
-        image2: "../src/assets/images/categories/id4I2.jpg",
-        image3: "../src/assets/images/categories/id4I3.jpg",
+        image2: "../src/assets/images/categories/id4I2.jpg"
     },
     {
         id: "5",
         name: "Юбки",
         image1: "../src/assets/images/categories/id5I1.jpg",
-        image2: "../src/assets/images/categories/id5I2.jpg",
-        image3: "../src/assets/images/categories/id5I3.jpg",
+        image2: "../src/assets/images/categories/id5I2.jpg"
     },
     {
         id: "6",
         name: "Жакеты",
         image1: "../src/assets/images/categories/id6I1.jpg",
-        image2: "../src/assets/images/categories/id6I2.jpg",
-        image3: "../src/assets/images/categories/id6I3.jpg",
+        image2: "../src/assets/images/categories/id6I2.jpg"
     },
     {
         id: "7",
         name: "Белье",
         image1: "../src/assets/images/categories/id7I1.jpg",
-        image2: "../src/assets/images/categories/id7I2.jpg",
-        image3: "../src/assets/images/categories/id7I3.jpg",
+        image2: "../src/assets/images/categories/id7I2.jpg"
     },
     {
         id: "8",
         name: "Корсажи",
         image1: "../src/assets/images/categories/id8I1.jpg",
-        image2: "../src/assets/images/categories/id8I2.jpg",
-        image3: "../src/assets/images/categories/id8I3.jpg",
+        image2: "../src/assets/images/categories/id8I2.jpg"
     },
     {
         id: "9",
         name: "Подарки",
         image1: "../src/assets/images/categories/id9I1.jpg",
-        image2: "../src/assets/images/categories/id9I2.jpg",
-        image3: "../src/assets/images/categories/id9I3.jpg",
+        image2: "../src/assets/images/categories/id9I2.jpg"
     },
 ]

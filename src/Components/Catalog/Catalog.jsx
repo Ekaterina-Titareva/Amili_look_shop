@@ -102,6 +102,7 @@ function Catalog() {
 				}
 			</article>
 		}
+		<a className={styles.allGoodsLink}href="/allGoods">Посмотреть все товары</a>
 	</section>
 	);
 }

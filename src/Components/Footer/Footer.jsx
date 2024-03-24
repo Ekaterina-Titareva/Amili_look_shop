@@ -7,11 +7,11 @@ function Footer() {
         < Logo />
         <nav>
             <ul className={styles.menu}>
-                <li><a className={styles.link} href="#home">Главная</a></li>
-                <li><a className={styles.link} href="#about">О нас</a></li>
-                <li><a className={styles.link} href="#goods">Наши товары</a></li>
-                <li><a className={styles.link} href="#info">Информация</a></li>
-                <li><a className={styles.link} href="#private">Политика конфиденциальности</a></li>
+                <li><a className={styles.link} href="/">Главная</a></li>
+                <li><a className={styles.link} href="/about">О нас</a></li>
+                <li><a className={styles.link} href="/goods">Наши товары</a></li>
+                <li><a className={styles.link} href="/info">Информация</a></li>
+                <li><a className={styles.link} href="/privacyPolicy">Политика конфиденциальности</a></li>
             </ul>
         </nav>
         <div className={styles.info}>
