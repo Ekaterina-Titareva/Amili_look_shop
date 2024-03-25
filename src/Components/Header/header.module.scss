@@ -1,14 +1,3 @@
-.wrapper {
-    display: flex;
-    // justify-content: center;
-    // align-items: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.2) 100%, rgba(255, 255, 255, 0.2) 100%), url('../../assets/images/main.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    min-width: 100%;
-}
-
 .header {
     width: 100%;
     height: auto;
@@ -25,43 +14,63 @@
     z-index: 99;
 }
 
-.button {
-    display: flex;
-    padding: 0.6rem 1.3rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.title {
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    text-align: center;
-    filter: drop-shadow(4px 2px 2px rgba(0, 0, 0, 0.386));
-    color: black;
-    text-transform: uppercase;
-}
-
 .burgerMenuItem {
     color: rgb(0, 0, 0);
-}
-
-
-h2 {
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.748);
-    font-size: 24px;
-    line-height: 120%;
-    transition: all 0.5s ease; 
-    padding: 10px;
-    margin-top: 5%;
 }
 
 span {
     text-transform:none;
     text-shadow: none;
     padding: 0;
+}
 
+.burger {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    position: fixed;
+    z-index: 100;
+}
+
+.button {
+    color: black;
+    width: 20px;
+    height: 30px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.button::before {
+    color: black;
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 40px;
+    background-color: black;
+    height: 4px;
+}
+
+.button span {
+    position: absolute;
+    top: 15px;
+    width: 40px;
+    background-color: black;
+    height: 4px;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    background-color: black;
+    height: 4px;
+}
+
+
+@media screen and (max-width: 550px) {
+    .burger {
+        height: 55px;
+    }
 }

@@ -1,6 +1,67 @@
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
+@font-face {
+    font-family: "Raleway";
+    src: url(../src/assets/fonts/Raleway.woff2) format("woff2"),
+        url(../src/assets/fonts/Raleway.woff) format("woff");
+    font-weight: 400;
 }
 
+body{
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: pink;
+}
+
+section {
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.748);
+    font-size: 24px;
+    line-height: 120%;
+    transition: all 0.5s ease; 
+    padding: 10px;
+    margin-top: 6%;
+}
+
+@media screen and (max-width: 1440px) {
+    h2 {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h2 {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        margin-top: 20%;
+    }
+
+}
+
+// @media screen and (max-width: 425px) {
+
+// }

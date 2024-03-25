@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Categories from '../Categories/Categories.jsx';
 import ItemsOfCategory from '../ItemsOfCategory/ItemsOfCategory.jsx';
 import ItemOfGoogs from '../ItemOfGoods/ItemOfGoods.jsx';
@@ -37,6 +37,12 @@ function Catalog() {
 		console.log(clickedItem);
 	}
 	return (
+		<>
+	<article className={styles.wrapper}>
+		<h1 className={styles.title}>
+			Amili look shop
+		</h1>
+	</article>
     <section id="goods" className={styles.container}>
 		<h2 className={styles.goodsTitle}>Наши товары</h2>
 		{ isClicked ?
@@ -104,6 +110,7 @@ function Catalog() {
 		}
 		<a className={styles.allGoodsLink}href="/allGoods">Посмотреть все товары</a>
 	</section>
+	</>
 	);
 }
 

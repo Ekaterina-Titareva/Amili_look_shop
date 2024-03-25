@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Menu from '../Menu/Menu.jsx'
 import Logo from '../Logo/Logo.jsx'
 import styles from '../Header/header.module.scss'
-import "./burger.scss"
 
 
 function Header() {
@@ -10,16 +9,15 @@ function Header() {
 	const items = [
 		{id: "home_link", value: "Главная", href: "/"},
 		{id: "about_link", value: "О нас", href: "/about"},
-		{id: "goods_link", value: "Наши товары", href: "/goods"},
+		{id: "goods_link", value: "Все товары", href: "/allGoods"},
 		{id: "info_link", value: "Информация", href: "/info"},
-		{id: "private_link", value: "Политика конфиденциальности", href: "/privacyPolicy"},
-		{id: "contacts_link", value: "Контакты", href: "/contacts"},
+		{id: "private_link", value: "Политика конфиденциальности", href: "/privacyPolicy"}
 	]
     return (
     <header className={styles.wrapper}>
-		<div className="burger">
+		<div className={styles.burger}>
 			<nav>
-				<div className="button" onClick={() => setMenuActive(!menuActive)}>
+				<div className={styles.button} onClick={() => setMenuActive(!menuActive)}>
 					<span></span>
 				</div>
 			</nav>
@@ -29,9 +27,6 @@ function Header() {
 				items={items}
 			/>
 		</div>
-		<h1 className={styles.title}>
-			Amili look shop
-		</h1>
 		<div className={styles.container}>
 			<div className={styles.header}>
 				<Logo/>

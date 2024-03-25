@@ -32,3 +32,17 @@
     margin-bottom: 10px;
     list-style: none;
 }
+
+@media screen and (max-width: 767px) {
+    .blur{
+        display: none;
+    }
+    
+    .menuContent {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: white;
+        max-width: 100%;
+    }
+}

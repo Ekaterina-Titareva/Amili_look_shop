@@ -1,4 +1,5 @@
 import './app.scss'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './Components/Header/Header.jsx'
 import About from './Components/About/About.jsx'
 import Catalog from './Components/Catalog/Catalog.jsx'
@@ -11,18 +12,18 @@ import Questions from './Components/Questions/Questions.jsx';
 function App() {
 
 	return (
-	<>
+	<Router>
 		< Header />
-		<main className='wrapper'>
-			< Catalog />
-			< About /> 
-			< AllGoods />
-			< Reviews />
-			<Questions />
-			< PrivacyPolicy />
-		</main>
+		<Routes>
+				<Route path='/' element={< Catalog />} />
+				<Route path='/about' element={< About />} />
+				<Route path='/allGoods' element={< AllGoods />} />
+				<Route path='/reviews' element={< Reviews />} />
+				<Route path='/info' element={<Questions />} />
+				<Route path='/privacyPolicy' element={< PrivacyPolicy />} />
+		</Routes>
 		< Footer />
-	</>
+	</Router>
 	)
 }
 

@@ -29,7 +29,7 @@ const rows = [
 
 function Questions() {
     return (
-        <>
+        <section>
         <h2>часто задаваемые вопросы</h2>
         <Accordion>
             <AccordionSummary
@@ -37,7 +37,7 @@ function Questions() {
                 aria-controls="panel1-content"
                 id="panel1-header"
             > 
-                Как ухаживать за изделиями?
+                <h3>Как ухаживать за изделиями?</h3>
             </AccordionSummary>
             <AccordionDetails>
             <p>Внимательно читайте состав и требования к уходу на бирках. Изделия ручной работы требуют бережного ухода!</p>
@@ -52,7 +52,7 @@ function Questions() {
                 aria-controls="panel2-content"
                 id="panel2-header"
             >
-                Как правильно снимать мерки?
+                <h3>Как правильно снимать мерки?</h3>
             </AccordionSummary>
             <AccordionDetails>
                 <div className={styles.containerWrapper}>
@@ -77,7 +77,7 @@ function Questions() {
                 aria-controls="panel1-content"
                 id="panel1-header"
             > 
-                Как правильно выбрать свой размер?
+                <h3>Как правильно выбрать свой размер?</h3>
             </AccordionSummary>
             <AccordionDetails>
                 <p>Мы знаем, что выбрать размер без примерки бывает сложно. Поэтому сначала определите свой размер, по размерной сетке:</p>
@@ -133,7 +133,7 @@ function Questions() {
                 aria-controls="panel1-content"
                 id="panel1-header"
             > 
-                Как сделать предзаказ?
+                <h3>Как сделать предзаказ?</h3>
             </AccordionSummary>
             <AccordionDetails>
             <p>Предзаказ — это возможность забронировать понравившуюся модель в три простых шага:</p>
@@ -150,7 +150,7 @@ function Questions() {
                 aria-controls="panel1-content"
                 id="panel1-header"
             > 
-                Как получить заказ?
+                <h3>Как получить заказ?</h3>
             </AccordionSummary>
             <AccordionDetails>
             <p>После оплаты предзаказа, мы приступаем к пошиву и когда модель будет готова, отправим вам посылку по указанному адресу. Доставка по всей России. Если сроки пошива изменятся, мы Вам сообщим по Вашему номеру телефону.</p>
@@ -163,7 +163,7 @@ function Questions() {
                 aria-controls="panel1-content"
                 id="panel1-header"
             > 
-                Услуги портного
+                <h3>Услуги портного</h3>
             </AccordionSummary>
             <AccordionDetails>
             <p>Вы можете воспользоваться услугами профессионального портного.</p>
@@ -178,7 +178,7 @@ function Questions() {
                 aria-controls="panel1-content"
                 id="panel1-header"
             > 
-                Остались вопросы?
+                <h3>Остались вопросы?</h3>
             </AccordionSummary>
             <AccordionDetails>
                 <p>Если не нашли ответа на ваш вопрос, свяжитесь с нами по контактам ниже:</p>
@@ -187,7 +187,7 @@ function Questions() {
                 <p><a href="https://t.me/amili_lookshop" target="_blank">Telegram</a></p>
             </AccordionDetails>
         </Accordion>
-        </>
+        </section>
     );
 }
 
