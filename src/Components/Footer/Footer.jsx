@@ -1,18 +1,16 @@
+import Navigation from "../Navigation/Navigation"
 import styles from '../Footer/footer.module.scss'
 import Logo from '../Logo/Logo.jsx'
+import { navLinks } from '../../assets/data/navLinks.js'
 
 function Footer() {
     return (
     <footer className={styles.footer} id="contacts" >
         < Logo />
         <nav>
-            <ul className={styles.menu}>
-                <li><a className={styles.link} href="/">Главная</a></li>
-                <li><a className={styles.link} href="/about">О нас</a></li>
-                <li><a className={styles.link} href="/allGoods">Все товары</a></li>
-                <li><a className={styles.link} href="/info">Информация</a></li>
-                <li><a className={styles.link} href="/privacyPolicy">Политика конфиденциальности</a></li>
-            </ul>
+        < Navigation 
+                navLinks={navLinks}
+            />
         </nav>
         <div className={styles.info}>
                 <ul className={styles.contacts}>
