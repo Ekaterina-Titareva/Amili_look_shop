@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer'
 import PrivacyPolicy from './Components/PrivacyPolicy/PrivacyPolicy.jsx';
 import AllGoods from './Components/AllGoods/AllGoods.jsx';
 import Questions from './Components/Questions/Questions.jsx';
+// import ItemOfGoogs from './Components/ItemOfGoods/ItemOfGoods.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 				<Route path='/' element={< Catalog />} />
 				<Route path='/about' element={< About />} />
 				<Route path='/allGoods' element={< AllGoods />} />
+				{/* <Route path='/allGoods/:id' element={< ItemOfGoogs />} /> */}
 				<Route path='/reviews' element={< Reviews />} />
 				<Route path='/info' element={<Questions />} />
 				<Route path='/privacyPolicy' element={< PrivacyPolicy />} />

@@ -6,36 +6,27 @@ import styles from '../Catalog/catalog.module.scss'
 import {categories} from '../../assets/data/data.js'
 import {goods} from '../../assets/data/data.js'
 
-
-let clickedCategory = [];
-let clickedItem = [];
-
-function Catalog() {
-	const [isClicked, setIsClicked] = useState(false);
-	
-	const handleCategoryClick = (e) => {
-		setIsClicked((prev) => !prev);
-		console.log(e.target.alt);
-		const category = e.target.alt;
-		const filteredItems = goods.filter(item => item.category == category);
-		console.log(filteredItems);
-		clickedCategory = filteredItems;
-		console.log(clickedCategory);
-	}
-	const [selectedImage, setSelectedImage] = useState(null);
-	const handleImageClick = (image) => {
-	setSelectedImage(image);
-	}
-	const [isItemClicked, setIsItemClicked] = useState(false);
-	const handleItemClick = (e) => {
-		setIsItemClicked((prev) => !prev);
-		console.log(e.target.alt);
-		const itemName = e.target.alt;
-		const filteredItem = goods.filter(item => item.name == itemName);
-		console.log(filteredItem);
-		clickedItem = filteredItem;
-		console.log(clickedItem);
-	}
+	function Catalog() {
+		const [clickedCategory, setClickedCategory] = useState([]);
+		const [clickedItem, setClickedItem] = useState([]);
+		const [isClicked, setIsClicked] = useState(false);
+		const [isItemClicked, setIsItemClicked] = useState(false);
+		const [selectedImage, setSelectedImage] = useState(null);
+		const handleCategoryClick = (e) => {
+			setIsClicked((prev) => !prev);
+			const category = e.target.alt;
+			const filteredItems = goods.filter(item => item.category === category);
+			setClickedCategory(filteredItems);
+		}
+		const handleItemClick = (e) => {
+			setIsItemClicked((prev) => !prev);
+			const itemName = e.target.alt;
+			const filteredItem = goods.filter(item => item.name === itemName);
+			setClickedItem(filteredItem);
+		}
+		const handleImageClick = (image) => {
+			setSelectedImage(image);
+		}
 	return (
 		<>
 	<article className={styles.wrapper}>
