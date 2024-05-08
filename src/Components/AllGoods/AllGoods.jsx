@@ -1,60 +1,26 @@
-import React, { useState } from 'react';
 import styles from './allGoods.module.scss'
-import {goods} from '../../assets/data/data.js'
-import ItemsOfCategory from "../ItemsOfCategory/ItemsOfCategory.jsx"
-import ItemOfGoogs from '../ItemOfGoods/ItemOfGoods.jsx';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-function AllGoods() {
-    const [clickedItem, setClickedItem] = useState([]);
-    const [selectedImage, setSelectedImage] = useState(null);
-	const handleImageClick = (image) => {
-	setSelectedImage(image);
-	}
-	const [isItemClicked, setIsItemClicked] = useState(false);
-	const handleItemClick = (e) => {
-		setIsItemClicked((prev) => !prev);
-		console.log(e.target.alt);
-        const itemName = e.target.alt;
-        const filteredItem = goods.filter(item => item.name === itemName);
-        setClickedItem(filteredItem);
-	}
+function AllGoods({goods}) {
+    
     return (
-        <section id="allGoods" className={styles.container}>
+        <section className={styles.container}>
             <h2 className={styles.title}>все товары</h2>
             <div className={styles.wrapper}>
-                            { isItemClicked ? 
-                                <>
-                                    {clickedItem?.length &&
-                                        clickedItem.map((item) => ( 
-                                                <ItemOfGoogs 
-                                                    key={item.id}
-                                                    id={item.id}
-                                                    category={item.category}
-                                                    name={item.name}
-                                                    image1={item.image1}
-                                                    image2={item.image2}
-                                                    image3={item.image3}
-                                                    description={item.description}
-                                                    text1={item.text1}
-                                                    text2={item.text2}
-                                                    color={item.color}
-                                                    size={item.size}
-                                                    price={item.price}
-                                                    material={item.material}
-                                                    selectedImage={selectedImage}
-                                                    handleImageClick={handleImageClick}
-                                                />
-                                        ))
-                                    }
-                                </>
-                                :
-                goods.map((item) => (
-                    // <Link to={`${item.id}`} key={item.id}>
-                        <ItemsOfCategory key={item.id} id={item.id} name={item.name} image1={item.image1} image2={item.image2} price={item.price} handleItemClick={handleItemClick}/>
-                    // </Link>
-                    ))
-            }
+                { goods?.length &&
+                    goods.map((item) => (
+                        
+                        <Link to={`/allGoods/${item.id}`} key={item.id} >
+                            <div key={item.id} className={styles.card}>
+                                <div className={styles.imageWrapper} >
+                                    <img className={styles.image} src={item.image1} alt={item.name}/>
+                                </div>
+                                <p className={styles.name} id={item.id}>{item.name}</p>
+                                <p className={styles.price}>{item.price} ₽</p>
+                            </div>
+                        </Link>
+                        ))
+                }
             </div>
         </section>
     );

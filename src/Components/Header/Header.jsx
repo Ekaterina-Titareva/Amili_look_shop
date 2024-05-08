@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState} from 'react'
 import Menu from '../Menu/Menu.jsx'
 import Logo from '../Logo/Logo.jsx'
 import styles from '../Header/header.module.scss'
-import { navLinks } from '../../assets/data/navLinks.js'
+import { navLinks } from '../../../public/assets/data/data.js'
 
 
 function Header() {
@@ -13,7 +13,7 @@ function Header() {
 		<div className={styles.burger}>
 			<nav>
 				<div className={styles.button} onClick={() => setMenuActive(!menuActive)}>
-					<span></span>
+					<span className={styles.span}></span>
 				</div>
 			<Menu 
 				active={menuActive}
@@ -24,7 +24,7 @@ function Header() {
 		</div>
 		<div className={styles.container}>
 			<div className={styles.header}>
-				<Logo/>
+				<Logo />
 			</div>
 		</div>
 	</header>

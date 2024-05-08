@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom"
+import styles from './navigation.module.scss'
 
 const Navigation = ({navLinks}) => {
     
@@ -6,7 +7,7 @@ const Navigation = ({navLinks}) => {
     <ul>   
     {
         navLinks.map(item => 
-            <li className="link" key={item.id}>
+            <li className={styles.link} key={item.id}>
                 <Link to={`${item.href}`}>
                     {item.value}
                 </Link>

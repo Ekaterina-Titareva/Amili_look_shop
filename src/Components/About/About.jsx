@@ -1,10 +1,10 @@
 import styles from './about.module.scss'
-import aboutImg from '../../assets/images/about.jpg'
+import aboutImg from '../../../public/assets/images/about.jpg'
 
 function About() {
 
     return (
-        <section id="about" className={styles.container}>
+        <section className={styles.container}>
         <h2 className={styles.title}>о нас</h2>
         <div className={styles.media}>
             <img className={styles.image} src={aboutImg} alt="Гульназ" />

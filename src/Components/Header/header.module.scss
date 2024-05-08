@@ -18,7 +18,7 @@
     color: rgb(0, 0, 0);
 }
 
-span {
+.span {
     text-transform:none;
     text-shadow: none;
     padding: 0;
@@ -68,8 +68,11 @@ span {
     height: 4px;
 }
 
+.image {
+    display: none;
+}
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
     .burger {
         height: 55px;
     }
