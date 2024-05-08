@@ -1,4 +1,4 @@
-import styles from "./Categories.module.scss";
+import styles from "./categories.module.scss";
 import { Link } from "react-router-dom";
 import AllGoodsLink from '../AllGoodsLink/AllGoodsLink.jsx';
 
