@@ -1,6 +1,6 @@
 import styles from "./categories.module.scss";
 import { Link } from "react-router-dom";
-import AllGoodsLink from '../AllGoodsLink/AllGoodsLink.jsx';
+// import AllGoodsLink from '../AllGoodsLink/AllGoodsLink.jsx';
 
 export default function Categories(props) {
     const handleMouseOver = (e) => {
@@ -32,7 +32,7 @@ return (
         ))
       }
     </article>
-    <AllGoodsLink />
+    {/* <AllGoodsLink /> */}
 </section>
 </>
 );

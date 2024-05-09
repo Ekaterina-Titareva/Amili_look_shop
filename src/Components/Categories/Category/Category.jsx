@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Category.module.scss'
 import { Link } from 'react-router-dom';
-import AllGoodsLink from '../../AllGoodsLink/AllGoodsLink.jsx';
+// import AllGoodsLink from '../../AllGoodsLink/AllGoodsLink.jsx';
 
 
 export default function Category (props) {
@@ -37,7 +37,7 @@ export default function Category (props) {
                     ))
                 }
             </article>
-            <AllGoodsLink />
+            {/* <AllGoodsLink /> */}
         </section>  
         </>
     );
