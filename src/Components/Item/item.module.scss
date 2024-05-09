@@ -27,13 +27,13 @@
 }
 
 .imageWrapper{
-    width: 250px;
-    height: 380px;
+    max-width: 250px;
+    max-height: 380px;
 }
 
 .imageMainWrapper{
-    width: 541px;
-    height: 812px;
+    max-width: 541px;
+    max-height: 812px;
 }
 
 .imageMain, .image{
@@ -79,45 +79,52 @@
     margin: 0;
 }
 
-// @media screen and (max-width: 1125px) {
-//     .size{
-//         display: flex;
-//         flex-direction: column;
-//     }
-// }
+@media screen and (max-width: 1125px) {
+    .size{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
-// @media screen and (max-width: 1024px) {
-//     .images {
-//         grid-template-columns: 1fr;
-//         gap: 10px;
-//     }
-//     .imageWrapper, .imageMainWrapper {
-//         max-width: 350px;
-//         max-height: 520px;
-//     }
-// }
+@media screen and (max-width: 1024px) {
+    .images {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-items: center;
+    }
+    .imagesWrapper {
+        flex-direction: row;
+        justify-content: unset;
+    }
+    .imageMainWrapper {
+        max-width: 350px;
+        // max-height: 520px;
+    }
+    .imageWrapper {
+        max-width: 150px;
+        max-height: 220px;
+    }
+}
 
-// @media screen and (max-width: 768px) {
-//     .images {
-//         padding-right: 0;
-//     }
-//     .card {
-//         flex-direction: column-reverse;
-//         align-items: center;
-//     }
-//     .imageWrapper, .imageMainWrapper {
-//         max-width: 250px;
-//         max-height: 380px;
-//     }
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex-direction: column-reverse;
+    }
+    .infoWrapper {
+        align-items: center;
+        gap: 0;
+        text-align: center;
+    }
+    .images {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+    }
+    .name, .size, .price {
+        padding: 0;
+        margin: 5px;
+    }
     
-//     .description, .text1, .text2 , .name {
-//         max-width: unset;
-//     }
-//     .infoWrapper {
-//         gap: 0;
-//     }
-//   }
-
-  // @media screen and (max-width: 425px) {
-
-  // } */
+}

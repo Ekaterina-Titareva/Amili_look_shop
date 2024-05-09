@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-// import AllGoodsLink from '../../../AllGoodsLink/AllGoodsLink.jsx';
 import Item from '../../../Item/Item.jsx'
 
 export default function ItemCard (props) {
@@ -40,7 +39,6 @@ export default function ItemCard (props) {
                     />
                 ))
             }
-            {/* <AllGoodsLink /> */}
         </section>  
         </>
     );

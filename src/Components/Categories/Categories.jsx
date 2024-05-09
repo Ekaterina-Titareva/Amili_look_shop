@@ -1,14 +1,7 @@
 import styles from "./categories.module.scss";
 import { Link } from "react-router-dom";
-// import AllGoodsLink from '../AllGoodsLink/AllGoodsLink.jsx';
 
 export default function Categories(props) {
-    const handleMouseOver = (e) => {
-      e.target.src = `${e.target.src.slice(0, -5) + 2 + e.target.src.slice(-4)}`;
-    }
-    const handleMouseOut = (e) => {
-      e.target.src = `${e.target.src.slice(0, -5) + 1 + e.target.src.slice(-4)}`;
-    };
 return (
   <>
   <section id="categories" className={styles.container}>
@@ -20,7 +13,9 @@ return (
             <div className={styles.card}> 
                 <div className={styles.imageWrapper}>
                 <img className={styles.image}
-                    src={category.image1} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
+                    src={category.image1} 
+                    onMouseOver={props.handleMouseOver} 
+                    onMouseOut={props.handleMouseOut}
                     alt={category.name}
                     />
                     </div>
@@ -32,7 +27,6 @@ return (
         ))
       }
     </article>
-    {/* <AllGoodsLink /> */}
 </section>
 </>
 );

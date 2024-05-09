@@ -3,9 +3,6 @@ import styles from "./item.module.scss"
 const Item = (props) => {
     return (
         <div key={props.id} className={styles.card}>
-            {/* <img className={selectedImage === image1 ? `${styles.image} ${styles.selected}` : styles.image} src={image1} alt={name} onClick={() => handleImageClick(image1)} />
-            <img className={selectedImage === image2 ? `${styles.image} ${styles.selected}` : styles.image} src={image2} alt={name} onClick={() => handleImageClick(image2)} />
-            <img className={selectedImage === image3 ? `${styles.image} ${styles.selected}` : styles.image} src={image3} alt={name} onClick={() => handleImageClick(image3)} /> */}
             <div className={styles.images}>
                 <div  className={styles.imagesWrapper}>
                     <div className={styles.imageWrapper}>
@@ -25,7 +22,7 @@ const Item = (props) => {
                 <p className={styles.size}><span>Размер: </span><span className={styles.sizeBox}>{props.size}</span></p>
                 <p className={styles.color}>Цвет: {props.color}</p>
                 <p className={styles.material}>Материал: {props.material}</p>
-                <a className={styles.link} href={`https://wa.me/+79510686916/`} target="_blank">КУПИТЬ</a>
+                <a className={styles.link} href={`https://wa.me/79510686916?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20http://host1870940.hostland.pro/allGoods/${props.id}`} target="_blank">КУПИТЬ</a>
                 <p className={styles.description}>{props.description}</p>
                 <p className={styles.text1}>{props.text1}</p>
                 <p className={styles.text2}>{props.text2}</p>

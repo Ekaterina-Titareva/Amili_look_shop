@@ -23,6 +23,6 @@
 @media screen and (max-width: 768px) {
     .containerWrapper {
         flex-direction: column;
+        max-width: 100%;
     }
-    
 }

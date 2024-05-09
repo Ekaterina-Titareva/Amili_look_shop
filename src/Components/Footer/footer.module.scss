@@ -46,47 +46,46 @@
 }
 
 .whatsapp::before {
-    background-image: url("https://cdns.iconmonstr.com/wp-content/releases/preview/2016/240/iconmonstr-whatsapp-4.png");
+    background-image: url("/assets/icons/whatsapp.svg");
 }
 
 .telegram::before {
-    background-image: url("https://cdns.iconmonstr.com/wp-content/releases/preview/2018/240/iconmonstr-telegram-4.png");
+    background-image: url("/assets/icons/telegram.svg");
 }
 
 .instagram::before {
-    background-image: url("https://cdns.iconmonstr.com/wp-content/releases/preview/2016/240/iconmonstr-instagram-14.png");
+    background-image: url("/assets/icons/instagram.svg");
 }
 
 .phone::before { 
-    background-image: url("https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-smartphone-4.png");
+    background-image: url("/assets/icons/phone.svg");
 }
 
 .menu {
     list-style: none;
 }
 
-// @media screen and (max-width: 1440px) {}
-
-    .footer > nav > ul {
+.footer > nav > ul {
     display: grid;
     grid-template-columns: auto;
     align-items: start;
     gap: 0;
-    }
-    .footer > nav > ul > li {
-        display: block;
-        border: unset;
-        min-height: unset;
-        padding: 0;
-        margin: 0;
-    }
+}
+.footer > nav > ul > li {
+    display: block;
+    border: unset;
+    min-height: unset;
+    padding: 0;
+    margin: 0;
+}
+
 @media screen and (max-width: 1024px) {
         .footer {
         grid-template-columns: auto;
     }
         .footer > nav > ul {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
         align-items: center;
         padding: 0;
         gap: 5px;
@@ -99,11 +98,3 @@
         margin: 0;
     }
 }
-  
-  // @media screen and (max-width: 768px) {
-  
-  // }
-  
-  // @media screen and (max-width: 425px) {
-  
-  // } */

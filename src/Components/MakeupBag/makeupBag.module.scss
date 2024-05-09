@@ -50,26 +50,31 @@ text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
-    .imageWrapper {
-        max-width: 250px;
-        max-height: 255px;
+    .images {
+        flex-direction: column-reverse;
+        gap: 10px;
+        justify-items: center;
+    }
+    .imagesWrapper {
+        flex-direction: row;
+        justify-content: unset;
     }
     .imageMainWrapper {
-        max-width: 350px;
+        max-width: 370px;
         max-height: 520px;
+    }
+    .imageWrapper {
+        max-width: 180px;
+        max-height: 220px;
     }
 }
 
-@media screen and (max-width: 768px) {
 
+@media screen and (max-width: 600px) {
     .images {
+        display: flex;
         flex-direction: column-reverse;
-        padding-right: 0;
+        align-items: center;
+        padding: 0;
     }
-
-    .imageWrapper, .imageMainWrapper {
-        max-width: 250px;
-        max-height: 380px;
-    }
-
 }

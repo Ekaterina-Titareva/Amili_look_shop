@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Category.module.scss'
 import { Link } from 'react-router-dom';
-// import AllGoodsLink from '../../AllGoodsLink/AllGoodsLink.jsx';
 
 
 export default function Category (props) {
@@ -18,6 +17,7 @@ export default function Category (props) {
         };
         handleCategory();
     }, [categoryId]);
+
     return (
         <>
         <section className={styles.container}>
@@ -28,7 +28,7 @@ export default function Category (props) {
                     <Link to={`/categories/${categoryId}/${item.id}`} key={item.id}>
                         <div key={item.id} className={styles.card}>
                             <div className={styles.imageWrapper} >
-                            <img className={styles.image} src={item.image1} alt={item.name}/>
+                                <img className={styles.image} src={item.image1} onMouseOver={props.handleMouseOver} onMouseOut={props.handleMouseOut} alt={item.name}/>
                             </div>
                             <p className={styles.name} id={item.id}>{item.name}</p>
                             <p className={styles.price}>{item.price} ₽</p>
@@ -37,7 +37,6 @@ export default function Category (props) {
                     ))
                 }
             </article>
-            {/* <AllGoodsLink /> */}
         </section>  
         </>
     );
