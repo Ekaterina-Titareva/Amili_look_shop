@@ -1,4 +1,3 @@
-import React from 'react';
 import size from '../../../public/assets/images/size.jpg'
 import styles from './questions.module.scss'
 import {rows} from '../../../public/assets/data/data.js'

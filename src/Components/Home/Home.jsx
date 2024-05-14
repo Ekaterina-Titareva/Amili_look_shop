@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./home.module.scss";
 import Categories from "../Categories/Categories.jsx";
 import Questions from "../Questions/Questions.jsx";
@@ -15,9 +14,7 @@ const Home = (props) => {
         </div>
         <Categories goods={props.goods} categories={props.categories} handleMouseOver={props.handleMouseOver} handleMouseOut={props.handleMouseOut}/>
         <div className={styles.videoWrapper} >
-            <video className={styles.video} controls preload="auto">
-                <source src="./assets/video/video.mp4" type="video/mp4" />
-            </video>
+            <iframe className={styles.video} src="https://www.youtube.com/embed/BTutPTsVM6U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
         <MakeupBag goods={props.goods}/>
         <Questions />
