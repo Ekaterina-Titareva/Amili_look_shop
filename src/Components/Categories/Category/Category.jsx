@@ -23,7 +23,7 @@ export default function Category (props) {
         <section className={styles.container}>
             <h2 className={styles.goodsTitle}>Наши товары</h2>
             <article className={styles.categories}>
-                {clickedCategory?.length &&
+                {!!clickedCategory?.length &&
                     clickedCategory.map((item) => (
                     <Link to={`/categories/${categoryId}/${item.id}`} key={item.id}>
                         <div key={item.id} className={styles.card}>

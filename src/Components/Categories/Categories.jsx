@@ -7,7 +7,7 @@ return (
   <section id="categories" className={styles.container}>
   <h2 className={styles.goodsTitle}>Наши товары</h2>
     <article className={styles.categories}>
-      {props.categories?.length &&
+      {!!props.categories?.length &&
       props.categories.map((category) => ( 
           <Link to={`/categories/${category.id}`} key={category.id} title={category.id}>
             <div className={styles.card}> 

@@ -19,7 +19,7 @@ export default function ItemCard (props) {
         <>
         <section>
             <h2>Наши товары</h2>
-            {clickedItem?.length &&
+            {!!clickedItem?.length &&
                 clickedItem.map((item) => (
                     <Item 
                     key={item.id}

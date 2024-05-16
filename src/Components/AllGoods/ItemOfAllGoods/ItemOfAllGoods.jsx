@@ -19,7 +19,7 @@ export default function ItemOfAllGoods (props) {
         <>
         <section>
             <h2>Наши товары</h2>
-            {clickedItemOfGoods?.length &&
+            {!!clickedItemOfGoods?.length &&
                 clickedItemOfGoods.map((item) => (
                     <Item 
                     key={item.id}

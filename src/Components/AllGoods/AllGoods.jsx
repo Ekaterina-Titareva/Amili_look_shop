@@ -7,7 +7,7 @@ function AllGoods(props) {
         <section className={styles.container}>
             <h2 className={styles.title}>все товары</h2>
             <div className={styles.wrapper}>
-                { props.goods?.length &&
+                { !!props.goods?.length &&
                     props.goods.map((item) => (
                         
                         <Link to={`/allGoods/${item.id}`} key={item.id} >
