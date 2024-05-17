@@ -3,7 +3,7 @@ const MakeupBag = (props) => {
 
     return (
             <section className={styles.wrapper}>
-            <h3>Косметичка для косметики, дорожных принадлежностей, аксессуаров для волос, канцелярии</h3>
+            <h3 className={styles.title}>Косметичка для косметики, дорожных принадлежностей, аксессуаров для волос, канцелярии</h3>
             <div className={styles.images}>
                     <div  className={styles.imagesWrapper}>
                         <div className={styles.imageWrapper}>
@@ -17,7 +17,11 @@ const MakeupBag = (props) => {
                         <img className={styles.imageMain} src={props.goods[24].image1} alt={props.goods[24].name}/>
                     </div>
                 </div>
-            <a className={styles.link} href="https://www.ozon.ru/product/kosmetichka-dlya-kosmetiki-dorozhnyh-prinadlezhnostey-aksessuarov-dlya-volos-kantselyarii-1017297275/" target="_blank">Купить на OZON</a>
+            <a className={styles.link} 
+            href="https://www.ozon.ru/product/kosmetichka-dlya-kosmetiki-dorozhnyh-prinadlezhnostey-aksessuarov-dlya-volos-kantselyarii-1017297275/" 
+            target="_blank">
+                Купить
+            </a>
             </section>
 );
     };

@@ -5,7 +5,7 @@ function AllGoods(props) {
     
     return (
         <section className={styles.container}>
-            <h2 className={styles.title}>все товары</h2>
+            <h2 className={styles.title}>наши товары</h2>
             <div className={styles.wrapper}>
                 { !!props.goods?.length &&
                     props.goods.map((item) => (

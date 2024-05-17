@@ -40,6 +40,10 @@ iframe {
         font-size: 2em;
     }
     .videoWrapper {
-        margin: 30px;
+        margin: 0;
+    }
+    iframe {
+        width: 100vw;
+        height: 50vh;
     }
 }
