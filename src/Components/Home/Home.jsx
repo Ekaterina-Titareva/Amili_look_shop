@@ -12,10 +12,10 @@ const Home = (props) => {
             <h1 className={styles.title}>Amili look shop</h1>
         </article>
         </div>
-        <Categories goods={props.goods} categories={props.categories} handleMouseOver={props.handleMouseOver} handleMouseOut={props.handleMouseOut}/>
         <div className={styles.videoWrapper} >
             <iframe className={styles.video} src="https://www.youtube.com/embed/BTutPTsVM6U" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        </div>
+        </div>        
+        <Categories goods={props.goods} categories={props.categories} handleMouseOver={props.handleMouseOver} handleMouseOut={props.handleMouseOut}/>
         <MakeupBag goods={props.goods}/>
         <Questions />
 </>
