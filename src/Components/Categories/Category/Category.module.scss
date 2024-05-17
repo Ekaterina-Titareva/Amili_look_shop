@@ -20,14 +20,11 @@
     max-width: 250px;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .price {
     font-weight: bold;
-}
-
-p {
-    text-align: center;
 }
 
 @media screen and (max-width: 480px) {
