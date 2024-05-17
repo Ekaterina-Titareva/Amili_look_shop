@@ -16,11 +16,6 @@
     object-fit: cover;
 }
 
-.selected {
-    width: 200px;
-    height: 400px;
-}
-
 .name, .price {
     max-width: 250px;
     padding: 0;
@@ -30,3 +25,29 @@
 .price {
     font-weight: bold;
 }
+
+p {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .categories {
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-items: center;
+        gap: 5px;
+    }
+    .imageWrapper{
+        width: 150px;
+        height: 280px;
+    }
+    .name, .price {
+        max-width: 150px;
+        padding: 0;
+        margin: 0;
+    }
+    p {
+        font-size: smaller;
+    }
+    }

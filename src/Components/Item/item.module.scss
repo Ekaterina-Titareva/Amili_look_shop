@@ -23,12 +23,14 @@
 .infoWrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
 .imageWrapper{
     max-width: 250px;
     max-height: 380px;
+    align-items: center;
 }
 
 .imageMainWrapper{
@@ -83,6 +85,7 @@
     .size{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -112,9 +115,9 @@
         flex-direction: column-reverse;
     }
     .infoWrapper {
-        align-items: center;
         gap: 0;
         text-align: center;
+        margin: 0 10px;
     }
     .images {
         display: flex;

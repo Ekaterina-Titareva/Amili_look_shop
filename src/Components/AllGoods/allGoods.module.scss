@@ -22,11 +22,6 @@
     object-fit: cover;
 }
 
-// .selected {
-//     width: 200px;
-//     height: 400px;
-// }
-
 .name, .price {
     max-width: 250px;
     padding: 0;
@@ -42,3 +37,20 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .wrapper {
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-items: center;
+        gap: 5px;
+    }
+    .imageWrapper{
+        width: 150px;
+        height: 280px;
+    }
+    .name, .price {
+        max-width: 150px;
+    }
+    }

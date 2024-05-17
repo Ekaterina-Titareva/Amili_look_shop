@@ -12,17 +12,8 @@
     gap: 20px;
 }
 
-@media screen and (max-width: 1440px) {
-    .categories {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        justify-items: center;
-    }
-}
-
 .card {
     position: relative;
-    width: 200px;
-    height: 300px;
 }
 
 .image {
@@ -48,4 +39,22 @@
     font-weight: bold;
     color: white;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 1440px) {
+    .categories {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+.categories {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    justify-items: center;
+    gap: 5px;
+}
 }

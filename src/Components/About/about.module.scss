@@ -18,7 +18,7 @@
 .media {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
 }
 
 .image {
@@ -38,6 +38,7 @@
     .wrapper {
         display: flex;
         flex-direction: column;
+        gap: 5px;
     }
 }
 
@@ -45,7 +46,9 @@
     .container {
         margin: 0;
     }
+
     .image {
-        max-height: 480px;
+        width: 205.2px;
+        height: 358.8px;
     }
 }
