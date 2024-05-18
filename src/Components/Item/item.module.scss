@@ -1,3 +1,16 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
 .card {
     display: flex;
     flex-direction: row;
@@ -23,7 +36,6 @@
 .infoWrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .imageWrapper{
@@ -43,33 +55,28 @@
     object-fit: cover;
 }
 
-.name {
-    max-width: 350px;
-    font-weight: 700;
-    font-size: 24px;
-    text-align: center;
-}
-
 .price {
     font-weight: 700;
+    font-size: large;
 }
 
-.sizeBox{
+.sizeBox {
     padding: 2px 10px;
     border: 1px solid black;
-    width: fit-content;;
+    width: fit-content;
 }
 
 .color, .material {
     padding: 0;
     margin: 0;
+    max-width: 250px;
 }
 
 .link {
     display: block;
     width: 100px;
     padding: 5px;
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
     border: 1px solid black;
     text-transform: uppercase;
@@ -80,14 +87,6 @@
     font-size: 14px;
     padding: 0;
     margin: 0;
-}
-
-@media screen and (max-width: 1125px) {
-    .size{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -113,10 +112,11 @@
 
 @media screen and (max-width: 600px) {
     .card {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .infoWrapper {
         gap: 0;
+        align-items: center;
         text-align: center;
         margin: 0 10px;
     }
@@ -126,9 +126,20 @@
         align-items: center;
         padding: 0;
     }
-    .name, .size, .price {
+    .name, .size , .price {
         padding: 0;
         margin: 5px;
+    }
+    .name {
+        max-width: 300px;
+        font-size: 20px;
+    }
+    .size {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .link {
+        margin: 10px 0;
     }
     
 }
