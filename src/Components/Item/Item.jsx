@@ -1,21 +1,30 @@
 import styles from "./item.module.scss"
+import { useState } from 'react';
+
 
 const Item = (props) => {
+    const [mainImage, setMainImage] = useState(props.image1);
+    const handleClick = (image) => {
+        setMainImage(image);
+    };
     return (
         <div className={styles.cardWrapper}>
             <p className={styles.name}>{props.name}</p>
             <div className={styles.card}>
                 <div className={styles.images}>
-                    <div  className={styles.imagesWrapper}>
-                        <div className={styles.imageWrapper}>
-                            <img className={styles.image} src={props.image2} alt={props.name}/>
-                        </div>
-                        <div className={styles.imageWrapper}>
-                            <img className={styles.image} src={props.image3} alt={props.name}/>
-                        </div>
-                    </div>
                     <div className={styles.imageMainWrapper}>
-                        <img className={styles.imageMain} src={props.image1} alt={props.name}/>
+                        <img className={styles.imageMain} src={mainImage} alt={props.name} />
+                    </div>
+                    <div className={styles.imagesWrapper}>
+                        <div className={styles.imageWrapper} onClick={() => handleClick(props.image1)}>
+                            <img className={mainImage === props.image1 ? styles.imageMain : styles.image} src={props.image1} alt={props.name} />
+                        </div>
+                        <div className={styles.imageWrapper} onClick={() => handleClick(props.image2)}>
+                            <img className={mainImage === props.image2 ? styles.imageMain : styles.image} src={props.image2} alt={props.name} />
+                        </div>
+                        <div className={styles.imageWrapper} onClick={() => handleClick(props.image3)}>
+                            <img className={mainImage === props.image3 ? styles.imageMain : styles.image} src={props.image3} alt={props.name} />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.infoWrapper}>
@@ -38,4 +47,5 @@ const Item = (props) => {
 }
 
 export default Item
+
 
