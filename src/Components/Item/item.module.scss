@@ -68,10 +68,6 @@
     width: fit-content;
 }
 
-.color, .material {
-    padding: 0;
-    margin: 0;
-}
 
 .link {
     display: block;
@@ -83,7 +79,7 @@
     text-transform: uppercase;
 }
 
-.description, .text1, .text2 {
+.color, .material, .description, .text1, .text2 {
     max-width: 350px;
     font-size: 14px;
     padding: 0;
@@ -102,7 +98,6 @@
     }
     .infoWrapper {
         gap: 0;
-        align-items: center;
         margin: 0 20px;
     }
     .images {
@@ -138,10 +133,6 @@
     .name {
         max-width: 300px;
         font-size: 20px;
-    }
-    .size {
-        flex-direction: row;
-        gap: 10px;
     }
     .link {
         margin: 10px 0;

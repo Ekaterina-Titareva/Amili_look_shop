@@ -33,11 +33,13 @@ const Item = (props) => {
                     <p className={styles.color}>Цвет: {props.color}</p>
                     <p className={styles.material}>Материал: {props.material}</p>
                     <a className={styles.link} 
-                        href={`https://wa.me/79510686916?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%D0%9C%D0%B5%D0%BD%D1%8F%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20`} 
+                        href={`https://wa.me/89510686916?text=Здравствуйте, хочу сделать заказ. Меня интересует ${props.name}`} 
                         target="_blank">
                         заказать
                     </a>
-                    <p className={styles.description}>{props.description}</p>
+                    {Array.isArray(props.description) 
+                    ? props.description.map((item, index) => (<p key={index} className={styles.description}>{item}</p>)) 
+                    : <p className={styles.description}>{props.description}</p>}
                     <p className={styles.text1}>{props.text1}</p>
                     <p className={styles.text2}>{props.text2}</p>
                 </div>

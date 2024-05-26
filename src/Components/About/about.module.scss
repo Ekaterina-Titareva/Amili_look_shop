@@ -29,6 +29,7 @@
 
 .text {
     font-size: 16px;
+    text-align: justify;
 }
 .text:first-of-type{
     margin-top: 0;
@@ -46,7 +47,9 @@
     .container {
         margin: 0;
     }
-
+    .text {
+        font-size: smaller;
+    }
     .image {
         width: 205.2px;
         height: 358.8px;

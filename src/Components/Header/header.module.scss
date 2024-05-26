@@ -1,17 +1,18 @@
-.header {
-    width: 100%;
-    height: auto;
-    display: flex;
-    position: fixed;
+header {
+    position: sticky;
     top: 0;
     left: 0;
+    z-index: 99;
+}
+
+.header {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.862);
     padding: 10px;
     align-items: center;
     min-width: 320px;
-    z-index: 99;
 }
 
 .burgerMenuItem {
@@ -29,7 +30,7 @@
     display: flex;
     align-items: center;
     height: 75px;
-    position: fixed;
+    position: absolute;
     z-index: 100;
 }
 
