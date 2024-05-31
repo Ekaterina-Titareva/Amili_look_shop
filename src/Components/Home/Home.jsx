@@ -13,7 +13,7 @@ const Home = (props) => {
         </article>
         </div>
         <div className={styles.videoWrapper} >
-            <iframe className={styles.video} src="https://www.youtube.com/embed/aL_D0uaq-FQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe className={styles.video} src="https://www.youtube.com/embed/B0zZdAY5dUE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>        
         <Categories goods={props.goods} categories={props.categories} handleMouseOver={props.handleMouseOver} handleMouseOut={props.handleMouseOut}/>
         <MakeupBag goods={props.goods}/>
